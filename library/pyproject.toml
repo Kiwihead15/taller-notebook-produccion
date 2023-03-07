@@ -4,10 +4,10 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "bikesmodel"
-authors = [{name = "Juan Luis Cano Rodríguez", email = "juanlu@orchest.io"}]
+authors = [{name = "anonimo", email = "anonimo@email.com"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
-dependencies = [
-    "pandas",
-    "numpy",
-    "scikit-learn",
-]
+
+[project.urls]
+Home = "http://foo.com"
