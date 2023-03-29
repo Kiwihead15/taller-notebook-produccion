@@ -24,13 +24,23 @@
 
 ```
 python -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate  #linux
+cd .venv/Scripts
+./activate
 pip install -U pip pip-tools
+cd..
+cd..
 pip-compile
 pip install -r requirements.txt
 pip install flit
 mkdir library && cd library
 flit init
 pip install black
+move app.py to .venv/Scripts 
+pip install pandas
+pip install joblib
+pip install -U scikit-learn
+pip install matplotlib
+pip install seaborn
 uvicorn app:app --reload
 ```
