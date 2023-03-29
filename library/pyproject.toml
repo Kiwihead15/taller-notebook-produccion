@@ -8,6 +8,3 @@ authors = [{name = "anonimo", email = "anonimo@email.com"}]
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
-
-[project.urls]
-Home = "http://foo.com"
