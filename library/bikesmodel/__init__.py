@@ -77,12 +77,12 @@ def train_and_persist() -> None:
 
     reg.fit(X_train, y_train)
 
-    #joblib.dump(reg, r"\tmp\model.joblib")
-    
-    joblib.dump(reg, r"C:\Users\pbiosca\AI\model.job")
+    joblib.dump(reg, r"\tmp\model.joblib")    
+    #joblib.dump(reg, r"C:\Users\pbiosca\AI\model.job")
 
 def predict(dteday, hr, weathersit, temp, atemp, hum, windspeed) -> int:
-    model = joblib.load(r"C:\Users\pbiosca\AI\model.job")
+    model = joblib.load( r"\tmp\model.joblib")
+    #model = joblib.load(r"C:\Users\pbiosca\AI\model.job")
 
     X_input = pd.DataFrame(
         [[pd.to_datetime(dteday), hr, weathersit, temp, atemp, hum, windspeed]],
